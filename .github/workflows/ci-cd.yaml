@@ -24,5 +24,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Start development server
-        run: yarn start:dev
+      - name: Build
+        run: yarn build
+
+      - name: Start production application
+        run: yarn start:prod
