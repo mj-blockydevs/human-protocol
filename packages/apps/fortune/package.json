@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "recording-oracle:dev": "cd recording-oracle && yarn start:dev",
+    "recording-oracle:prod": "cd recording-oracle && yarn start:prod",
     "recording-oracle:lint": "cd recording-oracle && yarn lint",
     "recording-oracle:test": "cd recording-oracle && yarn test",
     "lint": "concurrently npm:recording-oracle:lint",

@@ -19,10 +19,10 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: cd packages/apps/fortune/recording-oracle && yarn
+        run: cd packages/apps/fortune && yarn
 
-      - name: Build
-        run: cd packages/apps/fortune/recording-oracle && yarn build
+      - name: Start minio
+        run: cd packages/apps/fortune/recording-oracle && docker-compose up --d
 
       - name: Start production application
-        run: cd packages/apps/fortune/recording-oracle && yarn start:prod
+        run: cd packages/apps/fortune && yarn recording-oracle:prod
