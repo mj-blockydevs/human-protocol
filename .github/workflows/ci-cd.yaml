@@ -18,14 +18,11 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Change directory
-        run: cd packages/apps/fortune/recording-oracle
-
       - name: Install dependencies
-        run: yarn
+        run: cd packages/apps/fortune/recording-oracle && yarn
 
       - name: Build
-        run: yarn build
+        run: cd packages/apps/fortune/recording-oracle && yarn build
 
       - name: Start production application
-        run: yarn start:prod
+        run: cd packages/apps/fortune/recording-oracle && yarn start:prod
