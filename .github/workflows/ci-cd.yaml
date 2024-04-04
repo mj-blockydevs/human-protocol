@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '21'
 
       - name: Change directory
         run: cd packages/apps/fortune/recording-oracle
