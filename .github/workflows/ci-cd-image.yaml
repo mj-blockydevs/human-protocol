@@ -20,7 +20,3 @@ jobs:
 
       - name: Install dependencies
         run: yarn
-
-      - name: Start production application
-        run: yarn recording-oracle:prod
-        working-directory: packages/apps/fortune
